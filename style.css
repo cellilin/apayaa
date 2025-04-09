@@ -1,0 +1,112 @@
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff5f5;
+    font-family: 'Indie Flower', cursive;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    background-color: #ebf4ff;
+    padding: 40px;
+    border-radius: 20px;
+    border: 3px solid #6bb3ff;
+    box-shadow: 0 8px 20px rgba(107, 129, 255, 0.3);
+    max-width: 400px;
+    width: 90%;
+}
+
+.header_text {
+    font-size: 36px;
+    color: #6b77ff;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(107, 134, 255, 0.2);
+}
+
+.gif_container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#yesbutton {
+    padding: 12px 24px;
+    font-size: 20px;
+    border: 2px solid #6b7aff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #6b6bff;
+    color: white;
+    font-family: 'Indie Flower', cursive;
+    box-shadow: 0 4px 10px rgba(114, 107, 255, 0.3);
+}
+
+#yesbutton:hover {
+    background-color: white;
+    color: #6b7fff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(110, 107, 255, 0.4);
+}
+
+#nobutton {
+    padding: 12px 24px;
+    font-size: 20px;
+    border: 2px solid #3145fa;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #2b2bec;
+    color: white;
+    font-family: 'Indie Flower', cursive;
+    box-shadow: 0 4px 10px rgba(114, 107, 255, 0.3);
+}
+
+#nobutton:hover {
+    background-color: white;
+    color: #5947ff;
+    transform: translate(-2px);
+    box-shadow: 0 6px 15px rgba(110, 107, 255, 0.4);
+}
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.wiggle {
+    animation: wiggle 0.5s ease-in-out;
+}
+
+@keyframes heartFade {
+    0% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0; transform: scale(1.5); }
+}
+
+.heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    transform: translate(-50%, -50%);
+    animation: heartFade 1s ease-out forwards;
+    background-color: #6b93ff;
+    border-radius: 50%;
+}

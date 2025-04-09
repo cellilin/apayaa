@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Hehehhehe</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="header_text">Jalan yokkk</h1>
+            <div class="gif_container">
+                <img src="https://media.tenor.com/efbi1EpFlVUAAAAi/bugcat-capoo.gif" alt="Cute Capoo GIF">
+            </div>
+            <div class="buttons">
+               <a href="yes.html" id="yesbutton">ayooo</a>
+           </div>
+
+        <button class="buttons" id="nobutton" onclick="pindah()">ga ah,males</button>
+
+        <script>
+            function pindah() {
+                const btn = document.querySelector("#nobutton");
+        
+                const maxX = window.innerWidth - btn.offsetWidth;
+                const maxY = window.innerHeight - btn.offsetHeight;
+        
+                const newX = Math.floor(Math.random() * maxX);
+                const newY = Math.floor(Math.random() * maxY);
+                
+                btn.style.position = "absolute"
+                btn.style.left = newX + "px";
+                btn.style.top = newY + "px";
+            }
+        </script>
+    </body>
+    </html>
